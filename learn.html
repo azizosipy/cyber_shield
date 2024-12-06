@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fav.png" type="image/x-icon">
+    <title>Learn - Cybersecurity Awareness: Protecting the Ocean</title>
+    <link rel="stylesheet" href="learn.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+            <li><a href="https://f2e1-102-172-250-252.ngrok-free.app/" class="nav-link">Chatbot</a></li>
+            <li><a href="learn.html" class="nav-link">Learn</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Coral Reefs Section (Phishing Awareness) -->
+    <section id="coral-reefs" class="ocean-section">
+        <div class="content">
+            <div class="intro">
+                <h2>Coral Reefs: Phishing Awareness</h2>
+                <p>Phishing is like a dangerous predator trying to lure you into its trap. Let’s learn how to spot phishing attempts and safeguard your personal information, just as we protect our coral reefs!</p>
+            </div>
+            
+            <div class="quiz-container">
+                <h3>Can You Spot the Phishing Attempt?</h3>
+                <p><strong>Scenario:</strong> You’ve received an email claiming you’ve won a prize, but the sender seems suspicious. Is it a phishing attempt?</p>
+                
+                <!-- Interactive Example -->
+                <div class="email-sample">
+                    <p><strong>Email Subject:</strong> "Congratulations! You've Won a Free iPhone!"</p>
+                    <p><strong>Email Body:</strong> "Click here to claim your prize before it's too late!"</p>
+                    <a href="hack.avif" class="phishing-link" onclick="showImage()">Claim Your Prize</a>
+                </div>
+                
+                <!-- User Decision Buttons -->
+                <div class="decision-buttons">
+                    <button onclick="checkPhishing('yes')">This is Phishing</button>
+                    <button onclick="checkPhishing('no')">This is Safe</button>
+                </div>
+
+                <div id="quiz-result" class="result"></div>
+            </div>
+            <div id="prize-image" style="display: none;">
+                <img src="hack.avif" alt="Prize Image" />
+            </div>
+        </div>
+        <div class="secure-reef">
+            <h2>Secure the Coral Reef</h2>
+            <p>
+                Coral reefs are under attack by malicious threats! Drag the safe actions (fish) into the 
+                <strong>"Reef Safe Zone"</strong> and the threats (sharks) into the <strong>"Danger Zone"</strong>.
+            </p>
+            <div id="game-container">
+                <div class="game-board">
+                    <div id="items-container">
+                        <div class="item fish" draggable="true" data-type="safe">Use Strong Passwords</div>
+                        <div class="item shark" draggable="true" data-type="threat">Click Unknown Links</div>
+                        <div class="item fish" draggable="true" data-type="safe">Enable Two-Factor Authentication</div>
+                        <div class="item shark" draggable="true" data-type="threat">Share Passwords</div>
+                        <div class="item fish" draggable="true" data-type="safe">Use a VPN on Public Wi-Fi</div>
+                    </div>
+                    <div class="drop-zone" id="reef-safe-zone">Reef Safe Zone</div>
+                    <div class="drop-zone" id="danger-zone">Danger Zone</div>
+                </div>
+                <div id="game-status"></div>
+                <div id="end-game" style="display: none;">
+                    <h3 id="final-score"></h3>
+                    <button onclick="startGame()">Play Again</button>
+                </div>
+            </div>
+        </div>
+        <div id="game-containerr">
+            <h2>Catch the Cyber Threats!</h2>
+            <p>Click the floating cyber threats to clean the ocean!</p>
+            <p>Score: <span id="score">0</span></p>
+            <div id="ocean-area">
+                <div class="threat"></div>
+                <div class="threat"></div>
+                <div class="threat"></div>
+            </div>
+            <button id="reset-btn" style="display: none;">Play Again</button>
+        </div>
+        
+        
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CyberShield - Protect Your Data, Protect Our Ocean</p>
+      </footer>
+    <script src="learn.js"></script>
+</body>
+</html>

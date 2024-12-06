@@ -1,0 +1,403 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00bcd4, #0288d1); /* Gradient ocean background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    background-color: rgba(2, 136, 209, 0.9); /* Semi-transparent ocean blue */
+    color: white;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #0288d1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #0288d1;
+    border-radius: 50px;
+}
+
+nav li {
+    margin: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    background-color: #01579b;
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Ocean Section (Coral Reefs) */
+.ocean-section {
+    background: url('https://source.unsplash.com/1600x900/?coral-reef') no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-out;
+}
+
+.ocean-section .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ocean-section .intro h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.ocean-section .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
+    position: relative;
+}
+
+.quiz-container h3 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0288d1;
+    text-transform: uppercase;
+}
+
+.quiz-container .email-sample {
+    background-color: #000000;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-container .email-sample .phishing-link {
+    color: #e53935;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.quiz-container .decision-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.quiz-container .decision-buttons button {
+    background-color: #0288d1;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-container .decision-buttons button:hover {
+    background-color: #01579b;
+}
+
+.quiz-container #quiz-result {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: #555;
+    font-weight: bold;
+}
+
+  /* Footer */
+  footer {
+    background-color: rgba(2, 136, 209, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    main {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    #quiz-container, #result-container {
+      padding: 20px;
+    }
+  
+    .option-button {
+      font-size: 1rem;
+    }
+  }
+  
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .ocean-section .intro h2 {
+        font-size: 2.2rem;
+    }
+
+    .quiz-container {
+        width: 90%;
+    }
+}
+/* Secure the Coral Reef Game Styles */
+.secure-reef {
+    background-color: #e0f7fa;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+}
+
+.secure-reef h2 {
+    color: #0288d1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.secure-reef p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.game-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+}
+
+.item {
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    text-align: center;
+}
+
+.item.fish {
+    color: #388e3c;
+    border: 2px solid #388e3c;
+}
+
+.item.shark {
+    color: #d32f2f;
+    border: 2px solid #d32f2f;
+}
+
+.drop-zone {
+    width: 30%;
+    min-height: 200px;
+    border: 2px dashed #0288d1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+    font-size: 1.2rem;
+    color: #0288d1;
+}
+
+.drop-zone:hover {
+    background-color: #b3e5fc;
+    transition: background-color 0.3s;
+}
+
+#game-status {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #555;
+}
+#end-game {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#end-game h3 {
+    font-size: 2rem;
+    color: #0288d1;
+    margin-bottom: 20px;
+}
+
+#end-game button {
+    padding: 15px 30px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+#end-game button:hover {
+    background-color: #01579b;
+    transform: scale(1.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+#game-containerr {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #0288d1;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#ocean-area {
+    background: #0288d1;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+.threat {
+    background-color: #ff5252;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0288d1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00bcd4;
+}

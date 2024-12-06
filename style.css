@@ -1,0 +1,413 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif; /* Elegant and modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00bcd4, #0288d1); /* Gradient ocean background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-attachment: fixed; /* Parallax effect */
+}
+
+/* Header */
+header {
+    background-color: rgba(2, 136, 209, 0.9); /* Semi-transparent ocean blue */
+    color: white;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #0288d1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #0288d1;
+    border-radius: 50px;
+}
+
+nav li {
+    margin: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    background-color: #01579b;
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+main {
+    padding: 80px 20px; /* Increased padding to make more space between navbar and content */
+    text-align: center;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for content */
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Added margin-top to increase space between navbar and content */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 80px;
+}
+
+/* Home Page Containers */
+.container {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    color: #0288d1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.container button {
+    padding: 15px 30px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container button:hover {
+    background-color: #01579b;
+    transform: scale(1.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.container button:focus {
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(2, 136, 209, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    transition: 0.3s ease;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: footerAnimation 1s forwards 1s; /* Animation */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Footer Animation */
+@keyframes footerAnimation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .intro-section {
+        padding: 20px;
+    }
+}
+
+/* Special Styling for Metaphor Section (Parallel between Ocean and Human Body) */
+.metaphor {
+    background-color: rgba(255, 255, 255, 0.95); /* Light background */
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.metaphor h2 {
+    font-size: 2.5rem;
+    color: #0288d1;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.metaphor p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.metaphor:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.w3schools.com/w3images/ocean.jpg'); /* Background image */
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Call to Action */
+.call-to-action {
+    padding: 50px;
+    background-color: rgba(0, 188, 212, 0.8); /* Water-like background */
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.call-to-action button {
+    padding: 15px 35px;
+    font-size: 1.4rem;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.call-to-action button:hover {
+    background-color: #01579b;
+    transform: scale(1.1);
+}
+.video-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-container h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #0288d1;
+    margin-bottom: 20px;
+  }
+  
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+   
+
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.container:hover {
+    transform: translateY(-10px) rotateY(10deg) rotateX(10deg);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    color: #0288d1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.container h2 {
+    font-size: 2.5rem;
+    color: #0288d1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(0, 136, 209, 1), 0 0 20px rgba(0, 136, 209, 0.7), 0 0 30px rgba(0, 136, 209, 0.5);
+}
+
+.container button {
+    padding: 15px 30px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container button:hover {
+    background-color: #01579b;
+    transform: scale(1.1) translateY(-5px); /* 3D floating effect */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+@keyframes oceanWave {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00bcd4, #0288d1);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: oceanWave 5s ease-in-out infinite;
+}
+.metaphor {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    background-size: cover;
+}
+
+.metaphor h2 {
+    font-size: 2.5rem;
+    color: #0288d1;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.metaphor p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 30px;
+}

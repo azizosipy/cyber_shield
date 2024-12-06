@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="fav.png" type="image/x-icon">
+  <title>CyberShield Quiz</title>
+  <link rel="stylesheet" href="quizes.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+            <li><a href="https://f2e1-102-172-250-252.ngrok-free.app/" class="nav-link">Chatbot</a></li>
+            <li><a href="learn.html" class="nav-link">Learn</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="quiz-container">
+          <h2>Cyber Security Quiz</h2>
+          <div id="question-counter">Question 1 of 25</div>
+          
+          <!-- Dynamic Question Content Will Go Here -->
+          <div id="question-display">
+            <!-- Question and options will be injected dynamically here -->
+          </div>
+          
+          <!-- Timer (could be dynamic if needed) -->
+          <div id="timer">0:10</div>
+
+          <!-- Next Button -->
+          <button id="next-button" disabled>Next</button>
+        </div>
+
+        <!-- Result Section (Initially hidden) -->
+        <div id="result-container" style="display:none;">
+          <h2><span id="score"></span></h2>
+          <p id="performance-message"></p>
+          <div id="questions-review"></div>
+        </div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 CyberShield - Protect Your Data, Protect Our Ocean</p>
+    </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
